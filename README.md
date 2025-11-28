@@ -86,11 +86,7 @@ env:
   NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
   # https://developers.notion.com/reference/retrieve-a-database
   include_played_free_games: ${{ secrets.include_played_free_games }}
-  # 默认设置为 'true'
-  enable_item_update: ${{ secrets.enable_item_update }}
-  # 默认设置为 'true'
-  enable_filter: ${{ secrets.enable_filter }}
-  # 默认设置为 'false'
+  # 默认设置为 'true',可以不修改。
 ```
 
 | 变量名称                  | 数据类型 | 描述                           |
@@ -100,8 +96,6 @@ env:
 | `NOTION_API_KEY`          | `string` | Notion API 密钥                |
 | `NOTION_DATABASE_ID`      | `string` | Notion 数据库 ID               |
 | `include_played_free_games` | `string` | 是否包含免费游戏（`'true'/'false'`，需加引号） |
-| `enable_item_update`      | `string` | 是否启用项目更新（`'true'/'false'`） |
-| `enable_filter`           | `string` | 是否启用过滤器（`true/false`） |
 
 💡 **注意**: 在您 Fork 的仓库中，进入 `Settings -> Secrets and Variables -> Actions -> New repository secret` 添加以上变量。
 
@@ -147,8 +141,6 @@ NOTION_API_KEY = 'your_notion_api_key'
 NOTION_DATABASE_ID = 'your_notion_database_id'
 # OPTIONAL
 include_played_free_games = 'true'
-enable_item_update = 'false'
-enable_filter = 'true'
 ```
 
 ---
@@ -208,8 +200,6 @@ python main.py
 ### 🔑 **可选参数**
 
 - `include_played_free_games`: 是否包含免费游戏（`true/false`）
-- `enable_item_update`: 是否启用项目更新（`true/false`）
-- `enable_filter`: 是否启用过滤器（`true/false`）
 
 ---
 
