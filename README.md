@@ -4,7 +4,7 @@
 
 效果参考：https://colorfulblog.notion.site/Game-OS-e48032dd37d747149bef346b2b823900
 
-如果运行遇到问题的话，可以给我发ISSUE或者直接联系我。记得附上Github Actions的运行记录！
+如果运行遇到问题的话，可以给我发ISSUE或者直接联系我。记得附上Github Actions的运行记录！如果有帮到你麻烦给我点点star！满足我小小的虚荣心！谢谢！
 
 ---
 
